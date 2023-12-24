@@ -225,6 +225,7 @@ a:hover, .nav-item a.active{
       </li>
   ```
 
+---
 
   #### 🌟 React-Tooltip 
 Useful easy plug-in 🔥 I used in my app you need to import 2 things to be ready to use:  
