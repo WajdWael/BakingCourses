@@ -171,7 +171,8 @@ a:hover, .nav-item a.active{
 # 🌟 How can I smoothly navigate between different components using ```react-router-v6```?
 ### How to create a router system for navigating between pages?
 
-![react router v6 logo](image-5.png)
+![react router v6 logo](https://reactrouter.com/ogimage.png)
+
 
 ##### The magic happens in the ```App.jsx``` by using React-Router v6.
   importing 4 things will create all the magic!
