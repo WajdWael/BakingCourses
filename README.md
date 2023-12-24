@@ -71,7 +71,11 @@
 ## Structriong 🪜
 
   - Inside the ```pages``` folder, there are **7 pages** that we need to ```route``` in our project. Each folder ***contains a .jsx file and a .css styles file.**
+  
   ![This image displays the seven pages available in the Navbar section of our project.](image-3.png)
+
+
+
   This image displays the seven pages available in the Navbar section of our project.
 
   ---
@@ -98,7 +102,7 @@
 
 Jumping to our next learning goal it was:
 
-  #### 🌟 What is the easiest way to add an active class to a navBarLink?
+  ### 🌟 What is the easiest way to add an active class to a navBarLink?
 
 React Router v6 introduces a fascinating feature called ```<NavLink />``` that makes it easy to toggle between different Navbar links. 👉 [Read More](https://reactrouter.com/en/main/components/nav-link#default-active-class)
 ``` JSX
@@ -121,7 +125,7 @@ a:hover, .nav-item a.active{
 }
 ```
 
-  #### 🌟 How do you use the ```.map()``` method to fetch data?
+  ### 🌟 How do you use the ```.map()``` method to fetch data?
 
   - First you create an ```Array``` with all your data
     ```JSX
@@ -164,10 +168,11 @@ a:hover, .nav-item a.active{
     ```
 
 
-  #### 🌟 How can I smoothly navigate between different components using ```react-router-v6```?
-  
-  all the magic started in a App.jsx with using react-router v6
+# 🌟 How can I smoothly navigate between different components using ```react-router-v6```?
+### How to create a router system for navigating between pages?
+![react router v6 logo](image-4.png)
 
+##### The magic happens in the ```App.jsx``` by using React-Router v6.
   importing 4 things will create all the magic!
   ```JSX
   import {
