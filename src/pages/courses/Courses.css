@@ -1,0 +1,114 @@
+.courses-section, .main-container{
+    background: var(--color-gray);
+    position: relative;
+}
+.courses-section .content{
+    align-items: start;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: initial;
+    padding: 5.75rem 1rem 2rem;
+}
+.courses-section .main-title-paragraph{
+    max-width: 400px;
+}
+.courses-section .content .col2{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+.courses-section .cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding-bottom: 5rem;
+}
+.courses-section .cards .single-card{
+    max-width: fit-content;
+    background: var(--color-white);
+    border: 1px solid var(--lt-color-background-dark);
+    border-radius: 5px;
+    transition: .3s ease;
+    height: fit-content;
+}
+.courses-section .cards .card-image{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.bestseller-section{
+    position: relative;
+}
+.bestseller{
+    background-color: #5CB85C;
+    color: var(--color-bige);
+    padding: 0.25rem 0.75rem;
+    text-shadow: 0 1px rgba(0,0,0,.3);
+    position: absolute;
+    font-size: 14px;
+    font-weight: 600;
+    top: 14px;
+    left: -9px;
+}
+.bestseller-section::before{
+    content: "";
+    position: absolute;
+    border: 5px solid transparent;
+    border-top: 5px solid #348C34;
+    border-right: 5px solid #348C34;
+    bottom: -48px;
+    left: -9.5px;
+}
+.courses-section .cards .card-content{
+    display: flex;
+    justify-content: center;
+    align-items: self-start;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 20px;
+}
+.courses-section .cards .card-title{
+    font-size: 28px;
+    color: var(--color-mainbrown);
+    font-weight: 500;
+}
+.courses-section .cards .card-content{
+    font-size: 15px;
+    color: var(--lt-color-gray-600);
+}
+.courses-section .cards .card-button{
+    padding: 7px 20px;
+    border: 2px solid #357ebd;
+    background: #397FBB;
+    color: aliceblue;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: .3s ease;
+}
+.courses-section .cards .card-button:hover{
+    background-color: #3276b1;
+    border-color: #285e8e;
+}
+
+@media (max-width: 768px){
+    .courses-section .cards {
+        flex-direction: column;
+        max-width: 450px;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 481px){
+    .courses-section .content .col2 {
+        flex-direction: column;
+    }
+    .courses-section .content {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}

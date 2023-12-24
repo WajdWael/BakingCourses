@@ -1,0 +1,101 @@
+.signin{
+    padding-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+}
+.signin-title{
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-mainbrown);
+}
+.signin .main-title{
+    margin-bottom: 12px;
+    max-width: 550px;
+}
+.signin .standered-icon{
+    font-size: 1rem;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signin .outline-button{
+    display: flex;
+}
+
+/* ############################################################################################################################
+
+*
+*
+*
+
+SUBSCRIBE STYLES
+
+*/
+
+.subscribe{
+    padding: 3rem 1rem 5rem;
+}
+.subscribe-title{
+    font-size: 14px;
+    color: var(--color-mainbrown);
+    font-weight: 600;
+}
+.subscribe .main-title{
+    margin: 22px 0px;
+    font-size: 28px;
+}
+.subscribe input{
+    padding: 11px 1rem;
+    border-radius: 3px;
+    border: 1px solid var(--color-lightgray);
+    background: var(--color-lightwhite);
+    margin-right: 9px;
+    margin-bottom: 28px;
+    width: 100%;
+}
+.col2 .subscribe-title{
+    margin-top: 3rem;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.subscribe-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+.subscribe-icon-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+.subscribe-icons .subscribe-title {
+    margin-top: 0;
+}
+
+@media (min-width: 768px){
+    .subscribe-cols{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .col2 .subscribe-title{
+        margin-bottom: 3rem;
+        font-size: 14px;
+    }
+    .subscribe .main-title{
+        font-size: 38px;
+    }
+    .subscribe input{
+        width: 400px;
+    }
+}

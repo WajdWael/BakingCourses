@@ -1,0 +1,65 @@
+.feedback{
+    background: var(--color-gray);
+    margin-top: 4rem;
+}
+.students{
+    padding-top: 5rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+    margin-bottom: 7rem;
+}
+.students .main-title{
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3rem;
+    max-width: 655px;
+    margin: 0 auto;
+    text-align: center;
+}
+.student-card{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 4rem;
+    line-height: 25px;
+    flex-direction: column;
+    font-weight: 600;
+    align-items: center;
+    text-align: center;
+    max-width: 500px;
+    color: var(--color-mainbrown);
+}
+.student-username{
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    width: 100%;
+    color: var(--color-lightbrown);
+}
+.student-img{
+    border-radius: 50%;
+    width: 100%;
+    max-width: 150px;
+}
+
+.students-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+@media (max-width: 868px) {
+    .students-container{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+        align-items: center;
+    }
+}
+@media (max-width: 968px) {
+    .student-pargraph{
+        text-align: center;
+    }
+}

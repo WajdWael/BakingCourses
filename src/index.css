@@ -1,0 +1,229 @@
+@import url('/src/styles/colors.css');
+:root {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  overflow-x: hidden;
+}
+body, button{
+  font-family: 'Montserrat', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Fraunces', serif;
+}
+a{ 
+  text-decoration:none;
+}
+
+/*======== CONTAINER ========*/
+.container{
+    max-width: 1140px;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin: 0 auto;
+}
+@media (max-width:320px) {
+    .container{
+        max-width: 320px;
+    }
+}
+@media (max-width:481px) {
+    .container{
+        max-width: 481px;
+    }
+}
+@media (max-width:769px) {
+    .container{
+        max-width: 769px;
+    }
+}
+@media (max-width:1025px) {
+    .container{
+        max-width: 1025px;
+    }
+}
+@media (max-width:1201px) {
+    .container{
+        max-width: 1201px;
+    }
+}
+
+
+/*======== PRIMARY BUTTON ========*/
+.button{
+  color: var(--color-white);
+  outline: none;
+  border:none;
+  padding: 10px 18px 10px 18px;
+  font-size: 20px;
+  border-radius: 5px;
+  background-color: var(--color-yellow);
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 13px;
+  transition: 0.3s ease;
+  letter-spacing: 2px;
+}
+.button:hover,.outline-button:hover{
+  background-color: var(--color-mainbrown);
+}
+.outline-button:hover{
+  color: var(--color-gray);
+}
+.outline-button{
+  border: 1px solid var(--color-secondrybrown);
+  cursor: pointer;
+  outline: none;
+  color: var(--color-secondrybrown);
+  background-color: transparent;
+  transition: 0.3s ease;
+  font-size: 13px;
+  padding: 10px 18px 10px 18px;
+  font-weight:600;
+  text-transform: uppercase;
+  border-radius: 5px;
+  letter-spacing: 2px;
+}
+
+
+/*======== LINK <a> ========*/
+.blue-link{
+  padding: 1rem;
+  border-radius: 2rem;
+  color: blue;
+  transition: .4s;
+  margin-top: .5rem;
+}
+a.blue-link:hover{
+  opacity: .5;
+}
+.link-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  border-bottom: 1px solid transparent;
+  border-width: 2px;
+  width: 176px;
+}
+.link-container i{
+  margin: 0;
+}
+.link-styles{
+  color: var(--color-lightbrown);
+  font-weight: 600;
+  letter-spacing: 3px;
+  font-size: 13px;
+}
+.link-container:hover{
+  border-color: var(--color-yellow);
+
+}
+.link-container:hover a,
+.link-container:hover i{
+  color: var(--color-mainbrown);
+}
+
+/*======== FRAMES ========*/
+.flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3.5rem;
+  flex-direction: column;
+  max-width: 615px;
+}
+
+@media (max-width: 481px) {
+  .content{
+      gap: 1.5rem;
+  }
+}
+
+/*======== ICONS & IMAGES ========*/
+.standered-icon{
+  color: var(--color-lightbrown);
+  font-size: 2rem;
+  transition: color 0.3s;
+  margin-top: 3px;
+  margin-right: 2px;
+  cursor: pointer;
+}
+.standered-icon:hover{
+  color: var(--color-mainbrown);
+}
+.standered-img{
+  border-radius: 16px;
+  height: auto;
+  max-width: 100%;
+  border: none;
+  box-shadow: 32px 48px 128px -24px rgba(112,60.000000000000036,32.99999999999999,.2);
+}
+
+/*======== TEXT ========*/
+.main-title{
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--color-mainbrown);
+}
+@media (min-width: 768px){
+  .main-title{
+      font-size: 48px;
+  }
+}
+.main-title-paragraph{
+  font-size: 1rem;
+  line-height: 26px;
+  color: var(--color-lightbrown);
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+@media (max-width: 481px){
+  .main-title-paragraph{
+      font-size: 15px;
+  }
+}
+.large-size{
+  font-size: 72px;
+}
+
+/*======== SHAPES ========*/
+.rhombus-shap{
+  width: 20px;
+  height: 20px;
+  background: var(--color-yellow);
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  transform: rotate(45deg) translate(-50%, -50%);
+}
+.shap-start{
+  top: 4px;
+  z-index: 9999;
+}
+.shap-end{
+  bottom: -24px;
+}
+@media (max-width: 860px){
+  .none{
+    display: none;
+  }
+}
+

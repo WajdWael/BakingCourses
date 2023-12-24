@@ -1,0 +1,124 @@
+@import url('/src/styles/colors.css');
+
+/*SECTION*/
+.hero-section{
+    background-color: transparent;
+    gap: 3rem;
+    padding: 5rem 2rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.hero-section h1{
+    line-height: 88px;
+    font-weight: 600;
+}
+
+.backgournd {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 120vh;
+    width: 60vw;
+    background: var(--color-gray);
+    z-index: -1;
+    border-radius: 20px;
+}
+
+.hero-section .col1{
+    position: relative;
+    flex:1;
+}
+.line{
+    border-radius: 2px;
+    width: 50px;
+    height: 4px;
+    background-color: var(--color-yellow);
+    position: absolute;
+    top: -2%;
+    left: -0.5%;
+}
+
+.hero-section p{
+    font-size: 20px;
+}
+
+.buttons-section{
+    display: flex;
+    align-items: center;;
+    gap: 2rem;
+    padding-top: 0.25rem;
+}
+.hero-social{
+    padding-top: 5rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.hero-section .col2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+@media (max-width: 860px){
+    .hero-section h1 {
+        line-height: 50px;
+        font-size: 40px;
+    }
+    .backgournd{
+        height: 105vh;
+    }
+}
+
+@media (max-width: 767px){
+    .hero-section{
+        flex-direction: column;
+    }
+    .buttons-section{
+        flex-direction: column;
+    }
+    .button-hero-container {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero-section .col2{
+        justify-content: end;
+    }
+    .backgournd{
+        height: 190vh;
+        width: 70%;
+    }
+    .hero-social{
+        justify-content: center;
+    }
+}
+
+@media (max-width: 481px) {
+    .backgournd {
+        height: 147vh;
+        width: 55%;
+    }
+    .hero-section .col1{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .hero-section h1 {
+        line-height: 36px;
+        font-size: 27px;
+        font-weight: 700;
+    }
+    .hero-social{
+        padding-top: 3rem;
+    }
+    .buttons-section{
+        padding-top: 1.5rem;
+    }
+}
